@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="stylenew.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Fontawasome-->
+    <link
+      rel="stylesheet"
+      href="../css/fontawesome-free-6.3.0-web/css/all.css"
+    />
+    <link rel="stylesheet" href="/new/bootsrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css" />
+  </head>
+
+  <body>
+    <script src="../new/bootsrap/js/bootstrap.js"></script>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+      <div class="container">
+        <h3 class="navbar-brand" href="#">SMK Ki Hajar Dewantara</h3>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
+        </button>
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <div class="nav-menu">
+              <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="container-fluid">
+              <div class="nav-write">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <a href="">Write</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!---->
+    <!--WelcomeText-->
+    <div class="container-md py-4">
+      <div class="container-fluid">
+        <div class="kotak">
+          <header>
+            <p>Welcome</p>
+            <h3>SMK Ki Hajar Dewantara</h3>
+            <h3>
+              Kp. Rancabuaya RT. 003/001, Ds. Ancol Pasir, Kec. Jambe, Kab.
+              Tangerang, Banten, 15720
+            </h3>
+          </header>
+        </div>
+      </div>
+    </div>
+    <!---->
+
+    <!-- Card Hot News -->
+
+    <div class="container">
+      <div class="container-fluid">
+        <div
+          class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded"
+          style="max-width: 100%"
+        >
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://akcdn.detik.net.id/community/media/visual/2023/04/09/lionel-messi-1.jpeg?w=700&q=90"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title">
+                  Fazril dan Ghozy Memerangi Farha'un di Teluk Naga Bersama
+                  Truck
+                </h3>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                >
+                  Baca Selengkapnya
+                </a>
+                <div class="container">
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <!--Judul Berita-->
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          Fazril dan Ghozy Memerangi Farha'un di Teluk Naga Bersama Truck
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!--Gambar Berita-->
+      <div class="offcanvas-body">
+        <img
+          src="https://akcdn.detik.net.id/community/media/visual/2023/04/09/lionel-messi-1.jpeg?w=700&q=90"
+          class="img-fluid rounded-start"
+          alt="..."
+        />
+
+        <!--Pembatas-->
+        <div class="garis">
+          <p></p>
+        </div>
+
+        <!--Pembuat Konten dan Waktu-->
+        <h6>Mahsa Nurfarhan Hidayat</h6>
+        <p id="tanggalwaktu"></p>
+        <script>
+          var dt = new Date();
+          document.getElementById("tanggalwaktu").innerHTML =
+            dt.toLocaleString();
+        </script>
+
+        <!--Isi Berita-->
+        <div>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-fluid">
+        <div
+          class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded"
+          style="max-width: 100%"
+        >
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://akcdn.detik.net.id/community/media/visual/2023/04/09/lionel-messi-1.jpeg?w=700&q=90"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title">
+                  Fazril dan Ghozy Memerangi Farha'un di Teluk Naga Bersama
+                  Truck
+                </h3>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                >
+                  Baca Selengkapnya
+                </a>
+                <div class="container">
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <!--Judul Berita-->
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          Fazril dan Ghozy Memerangi Farha'un di Teluk Naga Bersama Truck
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!--Gambar Berita-->
+      <div class="offcanvas-body">
+        <img
+          src="https://akcdn.detik.net.id/community/media/visual/2023/04/09/lionel-messi-1.jpeg?w=700&q=90"
+          class="img-fluid rounded-start"
+          alt="..."
+        />
+
+        <!--Pembatas-->
+        <div class="garis">
+          <p></p>
+        </div>
+
+        <!--Pembuat Konten dan Waktu-->
+        <h6>Mahsa Nurfarhan Hidayat</h6>
+        <p id="tanggalwaktu"></p>
+        <script>
+          var dt = new Date();
+          document.getElementById("tanggalwaktu").innerHTML =
+            dt.toLocaleString();
+        </script>
+
+        <!--Isi Berita-->
+        <div>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-fluid">
+        <div
+          class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded"
+          style="max-width: 100%"
+        >
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://akcdn.detik.net.id/community/media/visual/2023/04/09/lionel-messi-1.jpeg?w=700&q=90"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title">
+                  Fazril dan Ghozy Memerangi Farha'un di Teluk Naga Bersama
+                  Truck
+                </h3>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                >
+                  Baca Selengkapnya
+                </a>
+                <div class="container">
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <!--Judul Berita-->
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          Fazril dan Ghozy Memerangi Farha'un di Teluk Naga Bersama Truck
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!--Gambar Berita-->
+      <div class="offcanvas-body">
+        <img
+          src="https://akcdn.detik.net.id/community/media/visual/2023/04/09/lionel-messi-1.jpeg?w=700&q=90"
+          class="img-fluid rounded-start"
+          alt="..."
+        />
+
+        <!--Pembatas-->
+        <div class="garis">
+          <p></p>
+        </div>
+
+        <!--Pembuat Konten dan Waktu-->
+        <h6>Mahsa Nurfarhan Hidayat</h6>
+        <p id="tanggalwaktu"></p>
+        <script>
+          var dt = new Date();
+          document.getElementById("tanggalwaktu").innerHTML =
+            dt.toLocaleString();
+        </script>
+
+        <!--Isi Berita-->
+        <div>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+          <p class="text-justify lh-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus maxime et quibusdam veritatis ducimus nostrum soluta
+            veniam alias, sunt eius consequatur laboriosam sint blanditiis harum
+            animi ullam sit dignissimos officiis iure repellat ab. Culpa,
+            assumenda tempora, nihil laboriosam suscipit aliquam laborum ab
+            voluptatem neque autem quas consequuntur architecto. Debitis, animi?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Hot News-->
+    <!-- <div class="container">
+      <div class="container-fluid">
+        <h2><i class="fa-solid fa-fire-flame-curved"></i> Hot News!</h2>
+
+        <div class="kotakberita">
+          <div class="fotoberita">
+            <img src="/new/img/cr1.jpg" width="500" height="250" />
+          </div>
+          <div class="textberita">
+            <header>
+              <h5>Mahsa Nurfarhan Hidayat</h5>
+              <h3>Ghozy dan Fazril memerangi Fir'aun di Padang Mashyar</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus assumenda, eum, amet esse explicabo odio eveniet
+                tenetur fugiat repudiandae nobis debitis accusantium atque
+                excepturi quos! Excepturi, eaque quasi. Alias minima
+                reprehenderit exercitationem ab. Alias, consequatur adipisci
+                delectus voluptatem ipsa laudantium iusto. Voluptatibus
+                excepturi optio totam eligendi accusamus ullam voluptate eum!
+              </p>
+            </header>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!---->
+
+    <!--Berita Terbaru-->
+    <!-- <div class="container">
+      <div class="container-fluid">
+        <h2>Latest News!</h2>
+        <h2>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus omnis ea saepe fuga expedita error est quod tempora
+          perferendis dolorem facilis exercitationem velit molestiae quos,
+          deleniti repellendus veniam rem recusandae at numquam. Consectetur
+          libero, maiores optio sint error nesciunt, obcaecati necessitatibus
+          pariatur saepe totam porro neque animi accusamus nihil. Officiis
+          aperiam nihil error dolore totam aliquam veniam! Est, nulla non. Ex
+          laudantium temporibus quaerat nesciunt deserunt incidunt cumque ut
+          iusto, culpa cupiditate vel atque? Voluptates amet veniam quam
+          nesciunt! Odit vero, dolore minus deserunt aliquid id aut sapiente sit
+          ad esse dolor iste totam dicta qui, laboriosam repellat nam porro.
+        </h2>
+      </div>
+    </div> -->
+    <!---->
+  </body>
+</html>
